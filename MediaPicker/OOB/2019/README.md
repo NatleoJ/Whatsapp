@@ -54,7 +54,7 @@ The patch determines that if an image descriptor was not parsed successfully, it
 1. Rendering Phase
    1. Render does not go through as rasterBits buffer is NULL
 Patch forgot to account for a third valid image after the malformed one.
-# Vulnerable flow
+## Vulnerable flow
 1. Parsing Phase
    1. Parse first image (small)
    1. Allocate rasterBits buffer of size (small height * small width)
